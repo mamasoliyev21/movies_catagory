@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lesson -1</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <!-- botsraph css -->
+    <link rel="stylesheet" href="./styles/botsraph.min.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+<body>
+    <header class="header  ">
+        <div class="container">
+            <div class="title d-flex">
+                <img class="header-img fs-2" src="./images/depositphotos_86700558-stock-illustration-sign-for-movie-time-background.jpg"  alt="">
+                <h1 class="header-title p-4 text-white">All Movies</h1>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="intro">
+                <div class="row">
+                    <div class="col-md-3 p-3 n-1 -2">
+                        <form action="#" id="submitForm">
+                            <label for="filmname" class="w-75 my-2 fs-5" >
+                                <strong style="color: white;"> Enter film name</strong>
+                                <input type="text" class="form-control p-3  my-2 inn" placeholder="Enter film name" id="filmname">
+                            </label>
+                            <label for="filmrating" class="w-75 my-2 fs-5  " >
+                                <strong style="color: white;"> Enter film rating</strong>
+                                <input id="filmRating" type="number" min="1" max="10" class="form-control my-2 p-3" placeholder="Enter film rating" id="filmRating">
+                            </label>
+                            <select  id="catagory" class="form-select w-75 p-3 my-4">
+                                <option value="all" selected disabled>Select film catagory</option>
+                            </select>
+                            <button style="background-color:rgb(195, 248, 80);" type="submit"  class="btn w-75   mt-3">
+                                Search
+                            </button>
+                        </form>
+                        <div style="margin-left: 55px; margin-top: 30px; width: 190px;" class= "card card-res bg-white p-4">
+                            <strong id="res"></strong> ta malumot topildi
+                        </div>
+                    </div>
+                    <div class="col-md-7    " >
+                        <div class="wrapper">
+                            
+                        </div>
+                    </div>
+                    <div class="col">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+<script src="./scripts/db.js"></script>
+<script src="./scripts/utils.js"></script>
+<script src="./main.js"></script>
+</html>
